@@ -22,7 +22,7 @@ export const Content = () => {
 
 const StyledSection = styled.section`
   max-width: 1440px;
-  height: 100vh;
+  height: 105vh;
   margin-top: 20px;
   padding-left: 128px;
   display: flex;
@@ -66,7 +66,7 @@ const StyledButton = styled.button`
 
 const StyledImgDiv = styled.div`
   max-height: 100%;
-  max-width: 690px;
+  max-width: 670px;
   overflow: hidden
 `;
 
