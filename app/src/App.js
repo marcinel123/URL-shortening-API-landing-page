@@ -1,25 +1,24 @@
-import styled from "styled-components";
+import { StyledWrapper } from "./App.styles";
 import { Header } from "./components/Header";
-import { Content } from "./components/Content";
+import { Content } from "./components/Content/Content";
 import { InputElement } from "./components/InputElement";
-import { GlobalStyles } from "./utils/GlobalStyles";
+import { GlobalStyles } from "./GlobalStyles";
+import { ThemeProvider } from "styled-components";
+import {theme} from "./Theme"
 
 export const App = () => {
   return (
     <>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Wrapper>
+      <StyledWrapper>
         <Header />
-        <Content/>
-        <InputElement/>
-      </Wrapper>
+        <Content />
+        <InputElement />
+      </StyledWrapper>
+      </ThemeProvider>
     </>
   );
 };
 
-const Wrapper = styled.div`
-position: relative;
-  margin: 0;
-  padding: 0;
-  width: 1440px;
-`;
+
