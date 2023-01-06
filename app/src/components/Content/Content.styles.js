@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const StyledSection = styled.section`
   max-width: 80rem;
   height: 100vh;
@@ -11,7 +10,7 @@ export const StyledSection = styled.section`
 export const StyledDiv = styled.div`
   margin-top: 80px;
   display: flex;
-  width: 600px;
+  width: 33.33rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -27,21 +26,21 @@ export const StyledH2 = styled.h2`
 export const StyledP = styled.p`
   margin-top: -5px;
   margin-bottom: 25px;
-  color: hsl(0, 0%, 75%);
+  color: ${(props) => props.theme.colors.gray};
 `;
 export const StyledButton = styled.button`
   border: none;
-  background-color: hsl(180, 66%, 49%);
+  background-color: ${(props) => props.theme.colors.cyan};
   width: 9rem;
   height: 45px;
   border-radius: 30px;
-  color: white;
-  font-size: 14px;
+  color: ${(props) => props.theme.colors.white};
+  font-size: ${(props) => props.theme.fontSizes.small};
   font-weight: 700;
 `;
 export const StyledImgWrapper = styled.div`
   max-height: 100%;
-  max-width: 690px;
+  max-width: 38.33rem;
   overflow: hidden;
 `;
 
