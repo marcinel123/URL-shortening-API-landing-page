@@ -4,7 +4,7 @@ import background from "../../images/bg-shorten-desktop.svg";
 export const StyledForm = styled.form`
   position: absolute;
   left: 270px;
-  border: 1px solid black;
+  border: 1px solid ${(props)=>props.theme.colors.black};
   display: flex;
   align-items: center;
   justify-content: center;

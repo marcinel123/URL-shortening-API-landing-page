@@ -20,14 +20,14 @@ export const StyledNavigation = styled.div`
 `;
 export const StyledLogoNavLink = styled(NavLink)`
   font-size: 28px;
-  color: black;
+  color: ${props=>props.theme.colors.black};
   font-weight: 700;
   text-decoration: none;
 `;
 export const StyledNavLink = styled(NavLink)`
   margin-left: 30px;
   font-size: 14px;
-  color: hsl(0, 0%, 75%);
+  color: ${(props)=>props.theme.colors.gray};
   font-weight: 700;
   text-decoration: none;
 `;
@@ -39,18 +39,18 @@ export const StyledButtonsWrapper = styled.div`
 
 export const StyledLoginButton = styled.button`
   border: none;
-  background-color: white;
-  color: hsl(0, 0%, 75%);
+  background-color: ${(props)=>props.theme.colors.white};
+  color: ${(props)=>props.theme.colors.gray};
   font-size: 14px;
   font-weight: 700;
 `;
 export const StyledSignUpButton = styled.button`
   border: none;
-  background-color: hsl(180, 66%, 49%);
+  background-color: ${(props)=>props.theme.colors.cyan};
   width: 90px;
   height: 30px;
   border-radius: 20px;
-  color: white;
+  color: ${(props)=>props.theme.colors.white};
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
