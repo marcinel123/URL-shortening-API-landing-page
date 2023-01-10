@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const StatisticsElement = ({title, description}) => {
+export const StatisticsElement = ({title, description, icon}) => {
   return (
     <Element>
+        <img src={icon} alt="Icon"/>
         <h2>{title}</h2>
         <p>{description}</p>
     </Element>

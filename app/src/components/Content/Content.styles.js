@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   max-width: 80rem;
-  height: 100vh;
+  height: 110vh;
   margin-top: 20px;
   padding-left: 128px;
   display: flex;
@@ -17,7 +17,7 @@ export const StyledDiv = styled.div`
 `;
 export const StyledH2 = styled.h2`
   margin-top: 0;
-  color: black;
+  color: ${(props) => props.theme.colors.black};
   margin-bottom: 4px;
   line-height: 70px;
   font-size: 60px;

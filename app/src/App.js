@@ -5,6 +5,7 @@ import { InputElement } from "./components/InputElement/InputElement";
 import { GlobalStyles } from "./GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./Theme";
+import { Statistics } from "./components/Statistics/Statistics";
 import Blank from "./";
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
           <Header />
           <Content />
           <InputElement />
+          <Statistics/>
         </StyledWrapper>
       </ThemeProvider>
     </>
