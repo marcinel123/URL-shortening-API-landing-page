@@ -17,7 +17,7 @@ export const App = () => {
           <Header />
           <Content />
           <InputElement />
-          <Statistics/>
+          <Statistics />
         </StyledWrapper>
       </ThemeProvider>
     </>

@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   max-width: 80rem;
-  height: 110vh;
+  height: 100vh;
   margin-top: 20px;
+  margin-bottom: 50px;
   padding-left: 128px;
   display: flex;
 `;
@@ -32,7 +33,7 @@ export const StyledButton = styled.button`
   border: none;
   background-color: ${(props) => props.theme.colors.cyan};
   width: 9rem;
-  height: 45px;
+  height: 2.5rem;
   border-radius: 30px;
   color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.fontSizes.small};

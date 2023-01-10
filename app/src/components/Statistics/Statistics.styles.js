@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.section`
   width: 80rem;
-  height: 180vh;
+  height: 100vh;
   background: ${(props) => props.theme.colors.gray};
   display: flex;
   flex-direction: column;
@@ -30,8 +30,8 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledStatiscticsElements = styled.div`
-  width: 1000px;
-  height: 200px;
+  width: 55.56rem;
+  height: 11.2rem;
   border-bottom: 5px solid ${(props) => props.theme.colors.cyan};
   display: flex;
   justify-content: space-around;

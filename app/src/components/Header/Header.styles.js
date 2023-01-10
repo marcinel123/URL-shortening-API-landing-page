@@ -14,43 +14,43 @@ export const StyledHeader = styled.div`
 `;
 export const StyledNavigation = styled.div`
   display: flex;
-  width: 800px;
+  width: 44.44rem;
   align-items: center;
   justify-content: flex-start;
 `;
 export const StyledLogoNavLink = styled(NavLink)`
   font-size: 28px;
-  color: ${props=>props.theme.colors.black};
+  color: ${(props) => props.theme.colors.black};
   font-weight: 700;
   text-decoration: none;
 `;
 export const StyledNavLink = styled(NavLink)`
   margin-left: 30px;
   font-size: 14px;
-  color: ${(props)=>props.theme.colors.gray};
+  color: ${(props) => props.theme.colors.gray};
   font-weight: 700;
   text-decoration: none;
 `;
 
 export const StyledButtonsWrapper = styled.div`
-  width: 300px;
+  width: 16.67rem;
   display: flex;
 `;
 
 export const StyledLoginButton = styled.button`
   border: none;
-  background-color: ${(props)=>props.theme.colors.white};
-  color: ${(props)=>props.theme.colors.gray};
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.gray};
   font-size: 14px;
   font-weight: 700;
 `;
 export const StyledSignUpButton = styled.button`
   border: none;
-  background-color: ${(props)=>props.theme.colors.cyan};
-  width: 90px;
-  height: 30px;
+  background-color: ${(props) => props.theme.colors.cyan};
+  width: 5rem;
+  height: 1.67rem;
   border-radius: 20px;
-  color: ${(props)=>props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
