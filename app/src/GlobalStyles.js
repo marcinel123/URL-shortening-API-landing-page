@@ -12,4 +12,4 @@ body {
     padding: 0;
 }
 
-`
+`;
