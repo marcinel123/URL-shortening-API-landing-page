@@ -2,7 +2,7 @@ import BrandIcon from "../../images/icon-brand-recognition.svg";
 import DetailedIcon from "../../images/icon-detailed-records.svg";
 import FullyIcon from "../../images/icon-fully-customizable.svg";
 
-export const StatisticsData = [
+export const statisticsData = [
   {
     title: "Brand Recognition",
     description:

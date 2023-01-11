@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { StatisticsElement } from "./StatisticsElement";
-import { StatisticsData } from "./StatisticsData";
+import { statisticsData } from "./StatisticsData";
 import {
   StyledWrapper,
   StyledHeader,
@@ -10,11 +10,6 @@ import {
 } from "./Statistics.styles";
 
 export const Statistics = () => {
-  const [Data, setData] = useState(null);
-
-  useEffect(() => {
-    setData(StatisticsData);
-  }, []);
 
   return (
     <StyledWrapper>
@@ -26,8 +21,8 @@ export const Statistics = () => {
         </StyledDescription>
       </StyledHeader>
       <StyledStatiscticsElements>
-        {Data &&
-          Data.map(({ icon, title, description }, index) => {
+        {statisticsData &&
+          statisticsData.map(({ icon, title, description }, index) => {
             return (
               <StatisticsElement
                 key={index}
