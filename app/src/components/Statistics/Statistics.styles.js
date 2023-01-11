@@ -30,9 +30,18 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledStatiscticsElements = styled.div`
+margin-top: 60px;
   width: 55.56rem;
   height: 11.2rem;
-  border-bottom: 5px solid ${(props) => props.theme.colors.cyan};
   display: flex;
   justify-content: space-around;
+  position: relative;
 `;
+
+export const LineThrough = styled.div`
+margin-top: 135px;
+width: 500px;
+height: 0.4rem;
+background-color: ${props=>props.theme.colors.cyan};
+position: absolute;
+`

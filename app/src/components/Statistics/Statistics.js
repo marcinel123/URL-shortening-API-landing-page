@@ -2,6 +2,7 @@ import React from "react";
 import { StatisticsElement } from "./StatisticsElement";
 import { statisticsData } from "./StatisticsData";
 import {
+  LineThrough,
   StyledWrapper,
   StyledHeader,
   StyledHeading,
@@ -21,14 +22,16 @@ export const Statistics = () => {
         </StyledDescription>
       </StyledHeader>
       <StyledStatiscticsElements>
+<LineThrough/>
         {statisticsData &&
-          statisticsData.map(({ icon, title, description }, index) => {
+          statisticsData.map(({ icon, title, description, id }) => {
             return (
               <StatisticsElement
-                key={index}
+                key={id}
                 icon={icon}
                 title={title}
                 description={description}
+                id={id}
               />
             );
           })}
