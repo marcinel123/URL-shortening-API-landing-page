@@ -11,7 +11,6 @@ import {
 } from "./Statistics.styles";
 
 export const Statistics = () => {
-
   return (
     <StyledWrapper>
       <StyledHeader>
@@ -22,19 +21,18 @@ export const Statistics = () => {
         </StyledDescription>
       </StyledHeader>
       <StyledStatiscticsElements>
-<LineThrough/>
-        {statisticsData &&
-          statisticsData.map(({ icon, title, description, id }) => {
-            return (
-              <StatisticsElement
-                key={id}
-                icon={icon}
-                title={title}
-                description={description}
-                id={id}
-              />
-            );
-          })}
+        <LineThrough />
+        {statisticsData.map(({ icon, title, description, id }) => {
+          return (
+            <StatisticsElement
+              key={id}
+              icon={icon}
+              title={title}
+              description={description}
+              id={id}
+            />
+          );
+        })}
       </StyledStatiscticsElements>
     </StyledWrapper>
   );

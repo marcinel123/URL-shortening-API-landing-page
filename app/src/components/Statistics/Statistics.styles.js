@@ -30,18 +30,24 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledStatiscticsElements = styled.div`
-margin-top: 60px;
+  margin-top: 60px;
   width: 55.56rem;
   height: 11.2rem;
   display: flex;
   justify-content: space-around;
   position: relative;
+  .box-1 {
+    margin-top: 30px;
+  }
+  .box-2 {
+    margin-top: 60px;
+  }
 `;
 
 export const LineThrough = styled.div`
-margin-top: 135px;
-width: 500px;
-height: 0.4rem;
-background-color: ${props=>props.theme.colors.cyan};
-position: absolute;
-`
+  margin-top: 135px;
+  width: 500px;
+  height: 0.4rem;
+  background-color: ${(props) => props.theme.colors.cyan};
+  position: absolute;
+`;
