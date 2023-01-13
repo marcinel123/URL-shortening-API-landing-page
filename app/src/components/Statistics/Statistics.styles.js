@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.section`
   width: 80rem;
-  height: 100vh;
   background: ${(props) => props.theme.colors.gray};
   display: flex;
   flex-direction: column;
@@ -30,17 +29,18 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledStatiscticsElements = styled.div`
+background: ${(props) => props.theme.colors.gray};
   margin-top: 60px;
   width: 55.56rem;
-  height: 11.2rem;
+  height: 22rem;
   display: flex;
   justify-content: space-around;
   position: relative;
   .box-1 {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .box-2 {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 `;
 

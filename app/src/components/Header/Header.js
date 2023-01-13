@@ -6,7 +6,8 @@ import { StyledLogoNavLink } from "./Header.styles";
 import { StyledNavLink } from "./Header.styles";
 import { StyledButtonsWrapper } from "./Header.styles";
 import { StyledLoginButton } from "./Header.styles";
-import { StyledSignUpButton } from "./Header.styles";
+import { StyledSignUpButton, StyledDropDownButton } from "./Header.styles";
+
 
 export const Header = () => {
   return (
@@ -16,6 +17,7 @@ export const Header = () => {
         <StyledNavLink>Features</StyledNavLink>
         <StyledNavLink>Pricing</StyledNavLink>
         <StyledNavLink>Resources</StyledNavLink>
+        <StyledDropDownButton className="dropdown">Menu</StyledDropDownButton>
       </StyledNavigation>
       <StyledButtonsWrapper>
         <StyledLoginButton>Login</StyledLoginButton>

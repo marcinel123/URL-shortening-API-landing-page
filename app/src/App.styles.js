@@ -5,4 +5,9 @@ export const StyledWrapper = styled.div`
   margin: 0;
   padding: 0;
   width: 80rem;
+
+
+  @media (max-width: 42.5rem) {
+  width: 20.85rem
+}
 `;

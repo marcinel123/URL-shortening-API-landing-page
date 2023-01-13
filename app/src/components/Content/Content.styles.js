@@ -7,6 +7,9 @@ export const StyledSection = styled.section`
   margin-bottom: 50px;
   padding-left: 128px;
   display: flex;
+  @media (max-width: 42.5rem) {
+    flex-direction: column-reverse;
+  }
 `;
 export const StyledDiv = styled.div`
   margin-top: 80px;
@@ -15,6 +18,9 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (max-width: 42.5rem) {
+    width: 100%;
+  }
 `;
 export const StyledH2 = styled.h2`
   margin-top: 0;
