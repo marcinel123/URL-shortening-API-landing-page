@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import burgerMenu from "../../images/menu-burger.png";
 
 export const StyledHeader = styled.div`
   margin: 0;
@@ -15,6 +16,8 @@ export const StyledHeader = styled.div`
   @media (max-width: 42.5rem) {
     width: 20.85rem;
     padding: 0;
+    margin-bottom: -20px;
+    position: relative;
   }
 `;
 export const StyledNavigation = styled.div`
@@ -24,7 +27,21 @@ export const StyledNavigation = styled.div`
   justify-content: flex-start;
   @media (max-width: 42.5rem) {
     width: 20.85rem;
-    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+    .dropdown_menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      padding: 10px;
+      top: 100px;
+      left: 20px;
+      width: 18.5rem;
+      height: 19rem;
+      background-color: ${(props) => props.theme.colors.darkViolet};
+      border-radius: 10px;
+    }
   }
 `;
 export const StyledLogoNavLink = styled(NavLink)`
@@ -34,7 +51,8 @@ export const StyledLogoNavLink = styled(NavLink)`
   text-decoration: none;
   @media (max-width: 42.5rem) {
     font-size: 2rem;
-    margin-right: 25px;
+    margin-right: 175px;
+    margin-left: 20px;
   }
 `;
 export const StyledNavLink = styled(NavLink)`
@@ -49,8 +67,31 @@ export const StyledNavLink = styled(NavLink)`
 `;
 
 export const StyledDropDownButton = styled.button`
-  background-color: aliceblue;
-  border: 6px solid blue;
+  display: none;
+  background-color: ${(props) => props.theme.colors.white};
+  background-image: url(${burgerMenu});
+  background-repeat: no-repeat;
+  border: none;
+  width: 1.5rem;
+  height: 1.75rem;
+  @media (max-width: 42.5rem) {
+    display: block;
+  }
+`;
+
+export const StyledDropDownMenu = styled.div`
+  display: none;
+  @media (max-width: 42.5rem) {
+  }
+`;
+export const StyledNavLinkInMenu = styled(NavLink)`
+text-align: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: ${(props) => props.theme.colors.gray};
+  font-weight: 700;
+  text-decoration: none;
 `;
 
 export const StyledButtonsWrapper = styled.div`

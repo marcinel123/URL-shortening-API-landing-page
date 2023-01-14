@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { StyledHeader } from "./Header.styles";
 import { StyledNavigation } from "./Header.styles";
 import { StyledLogoNavLink } from "./Header.styles";
 import { StyledNavLink } from "./Header.styles";
 import { StyledButtonsWrapper } from "./Header.styles";
-import { StyledLoginButton } from "./Header.styles";
-import { StyledSignUpButton, StyledDropDownButton } from "./Header.styles";
-
+import { StyledLoginButton, StyledDropDownMenu } from "./Header.styles";
+import {
+  StyledSignUpButton,
+  StyledDropDownButton,
+  StyledNavLinkInMenu,
+} from "./Header.styles";
 
 export const Header = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleMenu = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <StyledHeader>
       <StyledNavigation>
@@ -17,7 +26,14 @@ export const Header = () => {
         <StyledNavLink>Features</StyledNavLink>
         <StyledNavLink>Pricing</StyledNavLink>
         <StyledNavLink>Resources</StyledNavLink>
-        <StyledDropDownButton className="dropdown">Menu</StyledDropDownButton>
+        <StyledDropDownButton onClick={handleMenu}></StyledDropDownButton>
+        <StyledDropDownMenu className={isVisible ? "dropdown_menu" : ""}>
+          <StyledNavLinkInMenu>Features</StyledNavLinkInMenu>
+          <StyledNavLinkInMenu>Pricing</StyledNavLinkInMenu>
+          <StyledNavLinkInMenu>Resources</StyledNavLinkInMenu>
+          <StyledLoginButton>Login</StyledLoginButton>
+          <StyledSignUpButton>Sign up</StyledSignUpButton>
+        </StyledDropDownMenu>
       </StyledNavigation>
       <StyledButtonsWrapper>
         <StyledLoginButton>Login</StyledLoginButton>

@@ -8,6 +8,9 @@ export const StatisticsBox = styled.div`
   flex-direction: column;
   padding: 15px 25px;
   position: relative;
+  @media (max-width: 42.5rem) {
+    align-items: center;
+  }
 `;
 
 export const StyledImgSpan = styled.span`
@@ -21,6 +24,9 @@ export const StyledImgSpan = styled.span`
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
+  @media (max-width: 42.5rem) {
+    left: 115px;
+  }
 `;
 
 export const StyledTitle = styled.p`
@@ -34,4 +40,7 @@ export const StyledDescription = styled.p`
   margin-top: 0px;
   font-size: ${(props) => props.theme.fontSizes.small};
   color: ${(props) => props.theme.colors.gray};
+  @media (max-width: 42.5rem) {
+    text-align: center;
+  }
 `;
