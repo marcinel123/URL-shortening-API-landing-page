@@ -5,7 +5,7 @@ import burgerMenu from "../../images/menu-burger.png";
 export const StyledHeader = styled.div`
   margin: 0;
   padding: 0;
-  padding-left: 60px;
+  padding-left: 105px;
   width: 1440px;
   height: 120px;
   padding-top: 15px;
@@ -34,11 +34,12 @@ export const StyledNavigation = styled.div`
       flex-direction: column;
       align-items: center;
       position: absolute;
-      padding: 10px;
+      padding: 30px 20px;
+      padding-top: 35px;
       top: 100px;
       left: 20px;
       width: 18.5rem;
-      height: 19rem;
+      height: 20.5rem;
       background-color: ${(props) => props.theme.colors.darkViolet};
       border-radius: 10px;
     }
@@ -81,20 +82,30 @@ export const StyledDropDownButton = styled.button`
 
 export const StyledDropDownMenu = styled.div`
   display: none;
-  @media (max-width: 42.5rem) {
-  }
 `;
 export const StyledNavLinkInMenu = styled(NavLink)`
-text-align: center;
+  text-align: center;
   width: 100%;
-  height: 40px;
+  height: 25px;
   font-size: 18px;
   color: ${(props) => props.theme.colors.gray};
   font-weight: 700;
   text-decoration: none;
+  margin-bottom: 33px;
+`;
+
+export const StyledButtonsWrapperInMenu = styled.div`
+  border-top: 1px solid ${(props) => props.theme.colors.gray};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 4rem;
+  width: 95%;
+  padding-top: 10px;
 `;
 
 export const StyledButtonsWrapper = styled.div`
+  margin-left: 50px;
   width: 16.67rem;
   display: flex;
   @media (max-width: 42.5rem) {
@@ -108,6 +119,14 @@ export const StyledLoginButton = styled.button`
   color: ${(props) => props.theme.colors.gray};
   font-size: 14px;
   font-weight: 700;
+  @media (max-width: 42.5rem) {
+    width: 100%;
+    background-color: ${(props) => props.theme.colors.darkViolet};
+    height: 6.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0px;
+  }
 `;
 export const StyledSignUpButton = styled.button`
   border: none;
@@ -119,4 +138,14 @@ export const StyledSignUpButton = styled.button`
   font-size: 14px;
   margin-left: 20px;
   font-weight: 700;
+  @media (max-width: 42.5rem) {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 97%;
+    height: 5.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0px;
+    border-radius: 30px;
+  }
 `;

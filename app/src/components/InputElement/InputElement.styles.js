@@ -3,8 +3,8 @@ import background from "../../images/bg-shorten-desktop.svg";
 
 export const StyledForm = styled.form`
   position: absolute;
-  left: 128px;
-  top: 615px;
+  left: 148px;
+  top: 635px;
   border: 1px solid ${(props) => props.theme.colors.black};
   border-radius: 5px;
   display: flex;
@@ -19,7 +19,7 @@ export const StyledForm = styled.form`
     padding: 0;
     height: 9.5rem;
     left: 15px;
-    top: 770px;
+    top: 790px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +56,5 @@ export const StyledInputField = styled.input`
     height: 3rem;
     margin: 0;
     margin-bottom: 18px;
-
   }
 `;

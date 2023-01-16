@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
   max-width: 80rem;
   margin-top: 20px;
-  margin-bottom: 50px;
-  padding-left: 128px;
+  margin-bottom: 70px;
+  padding-left: 160px;
   display: flex;
   @media (max-width: 42.5rem) {
     margin: 0;
@@ -14,9 +14,9 @@ export const StyledSection = styled.section`
   }
 `;
 export const StyledDiv = styled.div`
-  margin-top: 80px;
+  margin-top: 70px;
   display: flex;
-  width: 33.33rem;
+  width: 41rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -30,8 +30,8 @@ export const StyledH2 = styled.h2`
   margin-top: 0;
   color: ${(props) => props.theme.colors.black};
   margin-bottom: 4px;
-  line-height: 70px;
-  font-size: 60px;
+  line-height: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   @media (max-width: 42.5rem) {
     width: 18rem;
@@ -42,6 +42,8 @@ export const StyledH2 = styled.h2`
   }
 `;
 export const StyledP = styled.p`
+  font-size: 1.35rem;
+  width: 32rem;
   margin-top: -5px;
   margin-bottom: 25px;
   color: ${(props) => props.theme.colors.gray};
@@ -54,11 +56,11 @@ export const StyledP = styled.p`
 export const StyledButton = styled.button`
   border: none;
   background-color: ${(props) => props.theme.colors.cyan};
-  width: 9rem;
+  width: 10rem;
   height: 2.5rem;
   border-radius: 30px;
   color: ${(props) => props.theme.colors.white};
-  font-size: ${(props) => props.theme.fontSizes.small};
+  font-size: ${(props) => props.theme.fontSizes.medium};
   font-weight: 700;
   @media (max-width: 42.5rem) {
     width: 10rem;
@@ -68,6 +70,7 @@ export const StyledButton = styled.button`
   }
 `;
 export const StyledImgWrapper = styled.div`
+  margin-left: 20px;
   max-height: 100%;
   max-width: 38.33rem;
   overflow: hidden;
@@ -78,12 +81,12 @@ export const StyledImgWrapper = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  padding-left: 100px;
+  padding-left: 80px;
   max-height: 90%;
   @media (max-width: 42.5rem) {
     padding: 0;
     width: 27rem;
     max-height: 110%;
-    padding-left: 30px;
+    padding-left: 0px;
   }
 `;

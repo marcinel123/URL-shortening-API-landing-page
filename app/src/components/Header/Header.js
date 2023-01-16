@@ -10,6 +10,7 @@ import {
   StyledSignUpButton,
   StyledDropDownButton,
   StyledNavLinkInMenu,
+  StyledButtonsWrapperInMenu,
 } from "./Header.styles";
 
 export const Header = () => {
@@ -31,8 +32,10 @@ export const Header = () => {
           <StyledNavLinkInMenu>Features</StyledNavLinkInMenu>
           <StyledNavLinkInMenu>Pricing</StyledNavLinkInMenu>
           <StyledNavLinkInMenu>Resources</StyledNavLinkInMenu>
-          <StyledLoginButton>Login</StyledLoginButton>
-          <StyledSignUpButton>Sign up</StyledSignUpButton>
+          <StyledButtonsWrapperInMenu>
+            <StyledLoginButton>Login</StyledLoginButton>
+            <StyledSignUpButton>Sign up</StyledSignUpButton>
+          </StyledButtonsWrapperInMenu>
         </StyledDropDownMenu>
       </StyledNavigation>
       <StyledButtonsWrapper>

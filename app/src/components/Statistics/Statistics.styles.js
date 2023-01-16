@@ -25,20 +25,20 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHeading = styled.h2`
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 10px;
   @media (max-width: 42.5rem) {
-    font-size: 22px;
+    font-size: 1.65rem;
   }
 `;
 export const StyledDescription = styled.p`
-  width: 22.22rem;
+  width: 29rem;
   color: ${(props) => props.theme.colors.grayishViolet};
-  font-size: 14px;
+  font-size: ${(props) => props.theme.fontSizes.medium};
   text-align: center;
   margin-top: 0;
   @media (max-width: 42.5rem) {
-    width: 16rem;
+    width: 19rem;
     padding: 0;
     margin-bottom: 100px;
   }
@@ -47,7 +47,7 @@ export const StyledDescription = styled.p`
 export const StyledStatiscticsElements = styled.div`
   background: ${(props) => props.theme.colors.gray};
   margin-top: 60px;
-  width: 55.56rem;
+  width: 63rem;
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -84,6 +84,6 @@ export const LineThrough = styled.div`
     width: 0.4rem;
     height: 500px;
     margin: 0 auto;
-    left: 138px;
+    left: 142px;
   }
 `;
