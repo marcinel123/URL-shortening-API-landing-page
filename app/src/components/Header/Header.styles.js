@@ -3,30 +3,38 @@ import { NavLink } from "react-router-dom";
 import burgerMenu from "../../images/menu-burger.png";
 
 export const StyledHeader = styled.div`
-  margin: 0;
-  padding: 0;
-  padding-left: 105px;
-  width: 1440px;
-  height: 120px;
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  @media (max-width: 42.5rem) {
-    width: 20.85rem;
-    padding: 0;
-    margin-bottom: -20px;
+  @media screen and (min-width: 350px) {
+    width: 100%;
+    padding: 20px 0;
     position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+    height: 120px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 auto;
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80rem;
   }
 `;
 export const StyledNavigation = styled.div`
-  display: flex;
-  width: 44.44rem;
-  align-items: center;
-  justify-content: flex-start;
-  @media (max-width: 42.5rem) {
-    width: 20.85rem;
+  @media (min-width: 350px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     .dropdown_menu {
@@ -44,39 +52,73 @@ export const StyledNavigation = styled.div`
       border-radius: 10px;
     }
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 export const StyledLogoNavLink = styled(NavLink)`
-  font-size: 28px;
-  color: ${(props) => props.theme.colors.black};
-  font-weight: 700;
-  text-decoration: none;
-  @media (max-width: 42.5rem) {
+  @media screen and (min-width: 350px) {
+    color: ${(props) => props.theme.colors.black};
+    font-weight: 700;
     font-size: 2rem;
-    margin-right: 175px;
-    margin-left: 20px;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
   }
 `;
 export const StyledNavLink = styled(NavLink)`
-  margin-left: 30px;
-  font-size: 14px;
-  color: ${(props) => props.theme.colors.gray};
-  font-weight: 700;
-  text-decoration: none;
-  @media (max-width: 42.5rem) {
+  @media (min-width: 350px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 30px;
+    font-size: 14px;
+    color: ${(props) => props.theme.colors.gray};
+    font-weight: 700;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 30px;
+    font-size: 14px;
+    color: ${(props) => props.theme.colors.gray};
+    font-weight: 700;
+    text-decoration: none;
   }
 `;
 
 export const StyledDropDownButton = styled.button`
-  display: none;
-  background-color: ${(props) => props.theme.colors.white};
-  background-image: url(${burgerMenu});
-  background-repeat: no-repeat;
-  border: none;
-  width: 1.5rem;
-  height: 1.75rem;
-  @media (max-width: 42.5rem) {
+  @media (min-width: 350px) {
     display: block;
+    background-color: ${(props) => props.theme.colors.white};
+    background-image: url(${burgerMenu});
+    background-repeat: no-repeat;
+    border: none;
+    width: 1.5rem;
+    height: 1.75rem;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+    background-color: ${(props) => props.theme.colors.white};
+    background-image: url(${burgerMenu});
+    background-repeat: no-repeat;
+    border: none;
+    width: 1.5rem;
+    height: 1.75rem;
   }
 `;
 
@@ -105,21 +147,19 @@ export const StyledButtonsWrapperInMenu = styled.div`
 `;
 
 export const StyledButtonsWrapper = styled.div`
-  margin-left: 50px;
-  width: 16.67rem;
-  display: flex;
-  @media (max-width: 42.5rem) {
+  @media screen and (max-width: 768px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 30%;
+    width: 20%;
+    display: flex;
+    align-items: center;
   }
 `;
 
 export const StyledLoginButton = styled.button`
-  border: none;
-  background-color: ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.gray};
-  font-size: 14px;
-  font-weight: 700;
-  @media (max-width: 42.5rem) {
+  @media screen and (min-width: 350px) {
     width: 100%;
     background-color: ${(props) => props.theme.colors.darkViolet};
     height: 6.5rem;
@@ -127,18 +167,16 @@ export const StyledLoginButton = styled.button`
     text-align: center;
     padding: 20px 0px;
   }
+  @media screen and (min-width: 768px) {
+    border: none;
+    background-color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.gray};
+    font-size: 14px;
+    font-weight: 700;
+  }
 `;
 export const StyledSignUpButton = styled.button`
-  border: none;
-  background-color: ${(props) => props.theme.colors.cyan};
-  width: 5rem;
-  height: 1.67rem;
-  border-radius: 20px;
-  color: ${(props) => props.theme.colors.white};
-  font-size: 14px;
-  margin-left: 20px;
-  font-weight: 700;
-  @media (max-width: 42.5rem) {
+  @media screen and (min-width: 350px) {
     margin: 0;
     margin-bottom: 10px;
     width: 97%;
@@ -147,5 +185,19 @@ export const StyledSignUpButton = styled.button`
     font-size: 1rem;
     padding: 10px 0px;
     border-radius: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: ${(props) => props.theme.colors.cyan};
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    color: ${(props) => props.theme.colors.white};
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 700;
   }
 `;
