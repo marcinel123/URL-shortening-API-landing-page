@@ -17,7 +17,7 @@ export const Statistics = () => {
         <StyledHeading>Advanced Statistics</StyledHeading>
         <StyledDescription>
           Track how your links are performing across the web with our advanced
-          statistics dashboard
+          statistics dashboard.
         </StyledDescription>
       </StyledHeader>
       <StyledStatiscticsElements>

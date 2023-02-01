@@ -3,6 +3,7 @@ import {
   StyledForm,
   StyledButton,
   StyledInputField,
+  StyledWrapper,
 } from "./InputElement.styles";
 
 export const InputElement = () => {
