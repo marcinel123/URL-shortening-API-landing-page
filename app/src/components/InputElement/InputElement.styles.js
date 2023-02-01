@@ -12,7 +12,7 @@ export const StyledForm = styled.form`
     padding: 0;
     height: 9.5rem;
     left: 15%;
-    top: 45%;
+    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;

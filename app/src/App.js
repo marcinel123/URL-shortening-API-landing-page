@@ -6,6 +6,8 @@ import { GlobalStyles } from "./GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./Theme";
 import { Statistics } from "./components/Statistics/Statistics";
+import { BoostElement } from "./components/BoostElement/BoostElement";
+import { Footer } from "./components/Footer/Footer";
 import Blank from "./";
 
 export const App = () => {
@@ -18,6 +20,8 @@ export const App = () => {
           <Content />
           <InputElement />
           <Statistics />
+          <BoostElement/>
+          <Footer/>
         </StyledWrapper>
       </ThemeProvider>
     </>
