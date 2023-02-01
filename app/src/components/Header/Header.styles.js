@@ -89,13 +89,6 @@ export const StyledNavLink = styled(NavLink)`
     font-weight: 700;
     text-decoration: none;
   }
-  @media screen and (min-width: 1440px) {
-    margin-left: 30px;
-    font-size: 14px;
-    color: ${(props) => props.theme.colors.gray};
-    font-weight: 700;
-    text-decoration: none;
-  }
 `;
 
 export const StyledDropDownButton = styled.button`

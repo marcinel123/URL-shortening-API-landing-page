@@ -107,8 +107,6 @@ export const StyledButton = styled.button`
   @media screen and (min-width: 768px) {
     margin: 2px 0;
   }
-  @media (min-width: 1440px) {
-  }
 `;
 export const StyledImgWrapper = styled.div`
   @media screen and (min-width: 350px) {
@@ -142,12 +140,12 @@ export const StyledImg = styled.img`
   }
   @media screen and (min-width: 768px) {
     max-height: auto;
-    width: 110%;
+    width: 100%;
     margin-top: 30px;
   }
 
   @media screen and (min-width: 1440px) {
     max-height: auto;
-    width: 120%;
+    width: 100%;
   }
 `;
