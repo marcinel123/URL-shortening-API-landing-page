@@ -23,7 +23,7 @@ export const StyledH2 = styled.h2`
     margin-top: 60px;
   }
   @media (min-width: 768px) {
-    margin-top: 35px;
+    margin-top: 45px;
     margin-bottom: 15px;
   }
 `;
@@ -34,7 +34,7 @@ export const StyledButton = styled.button`
     font-size: 1rem;
     text-align: center;
     background-color: ${(props) => props.theme.colors.cyan};
-    height: 3rem;
+    height: 2.75rem;
     border-radius: 30px;
     color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fontSizes.medium};

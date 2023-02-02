@@ -12,7 +12,7 @@ export const StyledWrapper = styled.section`
 `;
 export const StyledHeader = styled.div`
   @media screen and (min-width: 350px) {
-    width: 60%;
+    width: 90%;
     padding: 0;
     margin-bottom: -60px;
     margin-top: 150px;
@@ -24,14 +24,21 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHeading = styled.h2`
-  font-size: 2rem;
+ @media screen and (min-width: 350px) {
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+ }
+  
 `;
 export const StyledDescription = styled.p`
   @media (min-width: 350px) {
     color: ${(props) => props.theme.colors.grayishViolet};
     font-size: ${(props) => props.theme.fontSizes.medium};
-    width: 90%;
+    width: 100%;
     padding: 0;
     margin-bottom: 100px;
     text-align: center;
@@ -39,13 +46,14 @@ export const StyledDescription = styled.p`
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
+    width: 40%;
   }
 `;
 
 export const StyledStatiscticsElements = styled.div`
   @media (min-width: 350px) {
     margin: 50px 0px;
-    width: 60%;
+    width: 90%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -81,8 +89,8 @@ export const LineThrough = styled.div`
     background-color: ${(props) => props.theme.colors.cyan};
     position: absolute;
     width: 0.4rem;
-    height: 30%;
-    left: 50%;
+    height: 20%;
+    margin: 0 auto;
     z-index: 0;
   }
   @media screen and (min-width: 768px) {

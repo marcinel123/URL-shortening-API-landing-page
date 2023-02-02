@@ -12,7 +12,7 @@ export const StyledForm = styled.form`
     padding: 0;
     height: 9.5rem;
     left: 15%;
-    top: 30%;
+    top: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +20,21 @@ export const StyledForm = styled.form`
   }
   @media (min-width: 768px) {
     left: 10%;
-    top: 43%;
+    top: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 7.22rem;
     width: 80%;
-    max-width: 90rem;
+    max-width: 80rem;
+  }
+  @media (min-width: 1150px) {
+    top: 30%;
+  }
+  @media (min-width: 1440px) {
+    top: 33%;
+    left: 10%;
   }
 `;
 

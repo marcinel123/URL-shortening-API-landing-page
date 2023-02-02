@@ -4,43 +4,44 @@ import IconFacebook from "../../images/icon-facebook.svg"
 import IconInstagram from "../../images/icon-instagram.svg"
 import IconPinterest from "../../images/icon-pinterest.svg"
 import IconTwitter from "../../images/icon-twitter.svg"
-import { StyledFooter } from './Footer.styles'
+import { StyledFooter, StyledLogo, Heading, StyledList, StyledListElement, StyledIconDiv,
+    StyledIconImg } from './Footer.styles'
 
 export const Footer = () => {
   return (
     <StyledFooter>
-        <img src={ShortylLogo}/>
+        <StyledLogo>Shortly</StyledLogo>
         <div>
-            <h5>Features</h5>
-            <ul>
-                <li>Link Shortening</li>
-                <li>Branded Links</li>
-                <li>Analitics</li>
-            </ul>
+            <Heading>Features</Heading>
+            <StyledList>
+                <StyledListElement>Link Shortening</StyledListElement>
+                <StyledListElement>Branded Links</StyledListElement>
+                <StyledListElement>Analitics</StyledListElement>
+            </StyledList>
         </div>
         <div>
-            <h5>Rescources</h5>
-            <ul>
-                <li>Blog</li>
-                <li>Developers</li>
-                <li>Support</li>
-            </ul>
+            <Heading>Rescources</Heading>
+            <StyledList>
+                <StyledListElement>Blog</StyledListElement>
+                <StyledListElement>Developers</StyledListElement>
+                <StyledListElement>Support</StyledListElement>
+            </StyledList>
         </div>
         <div>
-            <h5>Company</h5>
-            <ul>
-                <li>About</li>
-                <li>Our Team</li>
-                <li>Careers</li>
-                <li>Contact</li>
-            </ul>
+            <Heading>Company</Heading>
+            <StyledList>
+                <StyledListElement>About</StyledListElement>
+                <StyledListElement>Our Team</StyledListElement>
+                <StyledListElement>Careers</StyledListElement>
+                <StyledListElement>Contact</StyledListElement>
+            </StyledList>
         </div>
-        <div>
-            <img src={IconFacebook}/>
-            <img src={IconInstagram}/>
-            <img src={IconPinterest}/>
-            <img src={IconTwitter}/>
-        </div>
+        <StyledIconDiv>
+            <StyledIconImg src={IconFacebook}/>
+            <StyledIconImg src={IconInstagram}/>
+            <StyledIconImg src={IconPinterest}/>
+            <StyledIconImg src={IconTwitter}/>
+        </StyledIconDiv>
     </StyledFooter>
   )
 }
