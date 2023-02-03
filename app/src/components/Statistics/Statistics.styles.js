@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledWrapper = styled.section`
   @media screen and (min-width: 350px) {
     width: 100%;
-    background: ${(props) => props.theme.colors.gray};
+    background: ${(props) => props.theme.colors.brightGray};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@ export const StyledHeader = styled.div`
     width: 90%;
     padding: 0;
     margin-bottom: -60px;
-    margin-top: 150px;
+    margin-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,15 +24,14 @@ export const StyledHeader = styled.div`
 `;
 
 export const StyledHeading = styled.h2`
- @media screen and (min-width: 350px) {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 2rem;
+  @media screen and (min-width: 350px) {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
- }
-  
 `;
 export const StyledDescription = styled.p`
   @media (min-width: 350px) {
@@ -45,13 +44,14 @@ export const StyledDescription = styled.p`
     margin-top: 0;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 40%;
   }
 `;
 
 export const StyledStatiscticsElements = styled.div`
   @media (min-width: 350px) {
+    background: ${(props) => props.theme.colors.brightGray};
     margin: 50px 0px;
     width: 90%;
     padding: 0;
@@ -66,7 +66,6 @@ export const StyledStatiscticsElements = styled.div`
     }
   }
   @media screen and (min-width: 768px) {
-    background: ${(props) => props.theme.colors.gray};
     margin-top: 60px;
     width: 80%;
     max-width: 80rem;

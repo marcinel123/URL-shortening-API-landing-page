@@ -3,7 +3,8 @@ import background from "../../images/bg-shorten-desktop.svg";
 
 export const StyledForm = styled.form`
   @media (min-width: 350px) {
-    position: absolute;
+    position: relative;
+    transform: translateY(50%);
     background-image: url(${background});
     background-color: ${(props) => props.theme.colors.darkViolet};
     border: 1px solid ${(props) => props.theme.colors.black};
@@ -11,16 +12,13 @@ export const StyledForm = styled.form`
     width: 70%;
     padding: 0;
     height: 9.5rem;
-    left: 15%;
-    top: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   @media (min-width: 768px) {
-    left: 10%;
-    top: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,13 +26,6 @@ export const StyledForm = styled.form`
     height: 7.22rem;
     width: 80%;
     max-width: 80rem;
-  }
-  @media (min-width: 1150px) {
-    top: 30%;
-  }
-  @media (min-width: 1440px) {
-    top: 33%;
-    left: 10%;
   }
 `;
 

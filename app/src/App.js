@@ -20,8 +20,8 @@ export const App = () => {
           <Content />
           <InputElement />
           <Statistics />
-          <BoostElement/>
-          <Footer/>
+          <BoostElement />
+          <Footer />
         </StyledWrapper>
       </ThemeProvider>
     </>

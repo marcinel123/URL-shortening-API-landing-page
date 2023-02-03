@@ -19,19 +19,19 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledLogo = styled.div`
-@media (min-width: 350px) {
+  @media (min-width: 350px) {
     margin-top: 40px;
     margin-bottom: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
-  font-size: 2rem;
-  color: ${(props) => props.theme.colors.white};
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-      margin-top: 20px;
-      margin-bottom: 5px;
-    }
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 2rem;
+    color: ${(props) => props.theme.colors.white};
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const Heading = styled.h5`
