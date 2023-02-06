@@ -9,8 +9,11 @@ import { Statistics } from "./components/Statistics/Statistics";
 import { BoostElement } from "./components/BoostElement/BoostElement";
 import { Footer } from "./components/Footer/Footer";
 import Blank from "./";
+import { useState } from "react";
 
 export const App = () => {
+  const [linksList, setLinksList] = useState([]);
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -18,8 +21,8 @@ export const App = () => {
         <StyledWrapper>
           <Header />
           <Content />
-          <InputElement />
-          <Statistics />
+          <InputElement linksList={linksList} setLinksList={setLinksList} />
+          <Statistics linksList={linksList} />
           <BoostElement />
           <Footer />
         </StyledWrapper>

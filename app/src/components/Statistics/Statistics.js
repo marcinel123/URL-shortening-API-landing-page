@@ -1,4 +1,5 @@
 import React from "react";
+import { LinksList } from "../LinksList/LinksList";
 import { StatisticsElement } from "./StatisticsElement";
 import { statisticsData } from "./StatisticsData";
 import {
@@ -10,9 +11,10 @@ import {
   StyledStatiscticsElements,
 } from "./Statistics.styles";
 
-export const Statistics = () => {
+export const Statistics = ({ linksList }) => {
   return (
     <StyledWrapper>
+      <LinksList linksList={linksList} />
       <StyledHeader>
         <StyledHeading>Advanced Statistics</StyledHeading>
         <StyledDescription>

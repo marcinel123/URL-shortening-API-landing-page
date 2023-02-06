@@ -66,3 +66,16 @@ export const StyledInputField = styled.input`
     margin-right: 1rem;
   }
 `;
+
+export const StyledLinksList = styled.div`
+  @media (min-width: 350px) {
+    margin: 0 auto;
+    width: 80%;
+    background-color: ${(props) => props.theme.colors.cyan};
+    color: ${(props) => props.theme.colors.white};
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    transform: translateY(50%);
+  }
+`;
