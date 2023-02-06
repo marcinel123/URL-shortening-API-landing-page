@@ -21,7 +21,6 @@ export const InputElement = ({ linksList, setLinksList }) => {
   const handleInput = (e) => {
     setUrl(e.target.value);
   };
-
   const shortenLink = async (e) => {
     e.preventDefault();
     try {
@@ -58,8 +57,10 @@ export const InputElement = ({ linksList, setLinksList }) => {
           type="text"
           placeholder="Shorten a link here..."
           onChange={handleInput}
+          required
         />
         <StyledButton onClick={shortenLink}>Shorten It!</StyledButton>
+        {url.length ? "" : "Please add a link"}
       </StyledForm>
     </>
   );

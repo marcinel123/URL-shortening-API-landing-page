@@ -1,5 +1,9 @@
 import React from "react";
-import { StyledListWrapper, StyledListElement } from "./LinksList.styles";
+import {
+  StyledListWrapper,
+  StyledListElement,
+  StyledLinkandBtnWrapper,
+} from "./LinksList.styles";
 
 export const LinksList = ({ linksList }) => {
   return (
@@ -7,7 +11,10 @@ export const LinksList = ({ linksList }) => {
       {linksList.map((singleLink, index) => {
         return (
           <StyledListElement key={index}>
-            https://{singleLink.longLink} - {singleLink.shortLink}
+            <p>{singleLink.longLink}</p>{" "}
+            <StyledLinkandBtnWrapper>
+              <p>{singleLink.shortLink}</p> <button>Copy</button>
+            </StyledLinkandBtnWrapper>
           </StyledListElement>
         );
       })}
