@@ -3,6 +3,9 @@ import {
   StyledListWrapper,
   StyledListElement,
   StyledLinkandBtnWrapper,
+  StyledCopyButton,
+  StyledShortLink,
+  StyledLongLink,
 } from "./LinksList.styles";
 
 export const LinksList = ({ linksList }) => {
@@ -11,9 +14,10 @@ export const LinksList = ({ linksList }) => {
       {linksList.map((singleLink, index) => {
         return (
           <StyledListElement key={index}>
-            <p>{singleLink.longLink}</p>{" "}
+            <StyledLongLink>{singleLink.longLink}</StyledLongLink>{" "}
             <StyledLinkandBtnWrapper>
-              <p>{singleLink.shortLink}</p> <button>Copy</button>
+              <StyledShortLink>{singleLink.shortLink}</StyledShortLink>{" "}
+              <StyledCopyButton>Copy</StyledCopyButton>
             </StyledLinkandBtnWrapper>
           </StyledListElement>
         );

@@ -8,9 +8,9 @@ import {
   StyledButton,
   StyledImgWrapper,
   StyledImg,
-} from "./Content.styles";
+} from "./IntroSection.styles";
 
-export const Content = () => {
+export const IntroSection = () => {
   return (
     <StyledSection>
       <StyledDiv>
