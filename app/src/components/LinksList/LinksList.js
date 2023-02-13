@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   StyledListWrapper,
   StyledListElement,
@@ -9,6 +10,13 @@ import {
 } from "./LinksList.styles";
 
 export const LinksList = ({ linksList }) => {
+  const [selectedBtn, setSelectedBtn] = useState(null);
+
+  const handleClick = (link, index) => {
+    navigator.clipboard.writeText(link);
+    setSelectedBtn(index);
+  };
+
   return (
     <StyledListWrapper>
       {linksList.map((singleLink, index) => {
@@ -16,8 +24,13 @@ export const LinksList = ({ linksList }) => {
           <StyledListElement key={index}>
             <StyledLongLink>{singleLink.longLink}</StyledLongLink>{" "}
             <StyledLinkandBtnWrapper>
-              <StyledShortLink>{singleLink.shortLink}</StyledShortLink>{" "}
-              <StyledCopyButton>Copy</StyledCopyButton>
+              <StyledShortLink>https://{singleLink.shortLink}</StyledShortLink>{" "}
+              <StyledCopyButton
+                className={`${index === selectedBtn ? "copied" : ""}`}
+                onClick={() => handleClick(singleLink.shortLink, index)}
+              >
+                {index === selectedBtn ? "Copied" : "Copy"}
+              </StyledCopyButton>
             </StyledLinkandBtnWrapper>
           </StyledListElement>
         );

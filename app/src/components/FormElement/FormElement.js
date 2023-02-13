@@ -6,11 +6,12 @@ import {
   StyledInputField,
   Wrapper,
   ErrorParagraph,
-} from "./InputElement.styles";
+} from "./FormElement.styles";
 
-export const InputElement = ({ linksList, setLinksList }) => {
+export const FormElement = ({ linksList, setLinksList }) => {
   const [url, setUrl] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem("list")) === null) {
@@ -23,6 +24,7 @@ export const InputElement = ({ linksList, setLinksList }) => {
   const handleInput = (e) => {
     setUrl(e.target.value);
     setIsVisible(false);
+    setIsVisible2(false);
   };
 
   const shortenLink = async (e) => {
@@ -52,6 +54,7 @@ export const InputElement = ({ linksList, setLinksList }) => {
       setUrl("");
     } else {
       setIsVisible(true);
+      setIsVisible2(true);
     }
   };
 
@@ -67,10 +70,15 @@ export const InputElement = ({ linksList, setLinksList }) => {
           onChange={handleInput}
           className={`${isVisible ? true : ""}`}
         />
+        {isVisible ? (
+          <ErrorParagraph className="error">Please add link</ErrorParagraph>
+        ) : (
+          ""
+        )}
         <StyledButton onClick={shortenLink}>Shorten It!</StyledButton>
       </Wrapper>
-      {isVisible ? (
-        <ErrorParagraph className="error">Please add link</ErrorParagraph>
+      {isVisible2 ? (
+        <ErrorParagraph className="error2">Please add link</ErrorParagraph>
       ) : (
         ""
       )}

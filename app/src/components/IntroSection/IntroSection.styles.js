@@ -92,6 +92,7 @@ export const StyledP = styled.p`
 `;
 export const StyledButton = styled.button`
   @media (min-width: 350px) {
+    margin-bottom: 180px;
     width: 10rem;
     font-size: 1rem;
     text-align: center;
@@ -102,6 +103,10 @@ export const StyledButton = styled.button`
     font-size: ${(props) => props.theme.fontSizes.medium};
     font-weight: 700;
     border: none;
+    :hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
   }
 `;
 export const StyledImgWrapper = styled.div`
@@ -115,14 +120,15 @@ export const StyledImgWrapper = styled.div`
     box-sizing: border-box;
     max-height: auto;
     width: 55%;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
     margin-left: 10px;
+    padding-top: 40px;
   }
 
   @media screen and (min-width: 1440px) {
     max-height: 90%;
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
   }
 `;
 
@@ -135,9 +141,8 @@ export const StyledImg = styled.img`
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
-    max-height: auto;
     width: 100%;
-    margin-top: 30px;
+    padding-top: 30px;
   }
 
   @media screen and (min-width: 1440px) {

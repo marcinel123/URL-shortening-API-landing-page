@@ -88,6 +88,10 @@ export const StyledNavLink = styled(NavLink)`
     color: ${(props) => props.theme.colors.gray};
     font-weight: 700;
     text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      color: ${(props) => props.theme.colors.black};
+    }
   }
 `;
 
@@ -161,11 +165,17 @@ export const StyledLoginButton = styled.button`
     padding: 20px 0px;
   }
   @media screen and (min-width: 768px) {
+    height: 2rem;
     border: none;
     background-color: ${(props) => props.theme.colors.white};
     color: ${(props) => props.theme.colors.gray};
     font-size: 14px;
     font-weight: 700;
+    padding: 0;
+    &:hover {
+      cursor: pointer;
+      color: ${(props) => props.theme.colors.black};
+    }
   }
 `;
 export const StyledSignUpButton = styled.button`
@@ -192,5 +202,9 @@ export const StyledSignUpButton = styled.button`
     font-size: 14px;
     margin-left: 20px;
     font-weight: 700;
+    :hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
   }
 `;

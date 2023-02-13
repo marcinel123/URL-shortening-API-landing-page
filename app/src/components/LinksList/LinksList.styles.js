@@ -2,20 +2,21 @@ import styled from "styled-components";
 
 export const StyledListWrapper = styled.section`
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: -60px;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (min-width: 768px) {
-    margin-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 0;
   }
 `;
 
 export const StyledListElement = styled.div`
   border-radius: 5px;
   margin: 10px 0;
-  height: 8rem;
+  height: auto;
   width: 100%;
   background-color: ${(props) => props.theme.colors.white};
   display: flex;
@@ -24,12 +25,14 @@ export const StyledListElement = styled.div`
   align-items: center;
   @media (min-width: 768px) {
     margin: 20px 0;
-    width: 90%;
-    height: 5rem;
+    width: 89%;
+    min-height: 5.5rem;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 1%;
   }
 `;
 
@@ -39,15 +42,20 @@ export const StyledLinkandBtnWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .copied {
+    background-color: ${(props) => props.theme.colors.darkViolet};
+  }
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
     width: 40%;
+    margin-left: 5%;
   }
   @media (min-width: 1440px) {
-    width: 40%;
+    width: 50%;
+    margin-left: 15%;
   }
 `;
 
@@ -59,14 +67,14 @@ export const StyledShortLink = styled.p`
   color: ${(props) => props.theme.colors.cyan};
   width: 100%;
   @media (min-width: 768px) {
-    width: 60%;
-    margin: 0 10%;
-    margin-right: 0;
+    width: 40%;
+    margin-right: 5%;
     font-size: ${(props) => props.theme.fontSizes.medium};
   }
 
   @media (min-width: 1440px) {
     font-size: ${(props) => props.theme.fontSizes.large};
+    margin-right: 5%;
   }
 `;
 export const StyledLongLink = styled.p`
@@ -79,18 +87,26 @@ export const StyledLongLink = styled.p`
   font-size: ${(props) => props.theme.fontSizes.small};
   color: ${(props) => props.theme.colors.black};
   @media (min-width: 768px) {
-    margin-right: 20%;
+    margin-right: 10%;
     padding: 0;
     width: 30%;
+    max-width: 12rem;
     border: none;
     font-size: ${(props) => props.theme.fontSizes.medium};
   }
   @media (min-width: 1440px) {
+    width: 28%;
+    max-width: 19rem;
     font-size: ${(props) => props.theme.fontSizes.large};
+    margin-right: 12%;
   }
 `;
 
 export const StyledCopyButton = styled.button`
+  :hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
   font-size: ${(props) => props.theme.fontSizes.small};
   width: 100%;
   padding: 0;
@@ -99,14 +115,19 @@ export const StyledCopyButton = styled.button`
   color: ${(props) => props.theme.colors.white};
   border: none;
   border-radius: 5px;
+  margin-bottom: 10px;
   @media (min-width: 768px) {
     font-size: ${(props) => props.theme.fontSizes.medium};
-    width: 30%;
-    margin-left: 20px;
+    width: 20%;
+    margin-left: 20%;
     height: 2.5rem;
   }
   @media (min-width: 1440px) {
+    width: 30%;
+    max-width: 10rem;
     font-size: ${(props) => props.theme.fontSizes.large};
     height: 3rem;
+    margin: 0;
+    margin-left: 12%;
   }
 `;
