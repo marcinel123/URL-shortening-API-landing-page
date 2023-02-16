@@ -45,8 +45,8 @@ export const StyledNavigation = styled.div`
       padding: 30px 20px;
       padding-top: 35px;
       top: 100px;
-      left: 20px;
-      width: 18.5rem;
+      margin: 0 auto;
+      width: 95%;
       height: 20.5rem;
       background-color: ${(props) => props.theme.colors.darkViolet};
       border-radius: 10px;
@@ -57,6 +57,9 @@ export const StyledNavigation = styled.div`
     width: 60%;
     align-items: center;
     justify-content: flex-start;
+    .dropdown_menu {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -105,17 +108,8 @@ export const StyledDropDownButton = styled.button`
     width: 1.5rem;
     height: 1.75rem;
   }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
-  }
-  @media screen and (min-width: 1440px) {
-    display: none;
-    background-color: ${(props) => props.theme.colors.white};
-    background-image: url(${burgerMenu});
-    background-repeat: no-repeat;
-    border: none;
-    width: 1.5rem;
-    height: 1.75rem;
   }
 `;
 
@@ -163,6 +157,8 @@ export const StyledLoginButton = styled.button`
     font-size: 1rem;
     text-align: center;
     padding: 20px 0px;
+    color: ${(props) => props.theme.colors.white};
+    border: none;
   }
   @media screen and (min-width: 768px) {
     height: 2rem;
@@ -188,6 +184,9 @@ export const StyledSignUpButton = styled.button`
     font-size: 1rem;
     padding: 10px 0px;
     border-radius: 30px;
+    border: none;
+    background-color: ${(props) => props.theme.colors.cyan};
+    color: ${(props) => props.theme.colors.white};
   }
   @media screen and (min-width: 768px) {
     text-align: center;

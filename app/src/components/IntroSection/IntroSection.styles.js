@@ -111,7 +111,7 @@ export const StyledButton = styled.button`
 `;
 export const StyledImgWrapper = styled.div`
   @media screen and (min-width: 350px) {
-    margin-top: 20px;
+    margin: 40px 0;
     width: 80%;
     max-height: auto;
     text-align: center;
