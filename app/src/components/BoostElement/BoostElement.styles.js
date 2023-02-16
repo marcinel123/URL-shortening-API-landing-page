@@ -42,6 +42,10 @@ export const StyledButton = styled.button`
     border: none;
     margin: 10px 0;
     margin-bottom: 70px;
+    :hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;

@@ -88,7 +88,7 @@ export const LineThrough = styled.div`
     background-color: ${(props) => props.theme.colors.cyan};
     position: absolute;
     width: 0.4rem;
-    height: 20%;
+    height: 15%;
     margin: 0 auto;
     z-index: 0;
   }
