@@ -17,28 +17,19 @@ export const StyledForm = styled.form`
   justify-content: center;
   margin: 0 auto;
   .error {
+    display: block;
     margin: 0;
-  }
-  .error2 {
-    display: none;
-    margin: 5px;
-    margin-right: 75%;
   }
 
   @media (min-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 8.5rem;
     width: 80%;
     max-width: 80rem;
     .error {
-      display: none;
-      margin: 5px;
-      margin-right: 75%;
-    }
-    .error2 {
       display: block;
       margin: 5px;
     }
@@ -52,16 +43,19 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: flex-start;
+    width: 78%;
+    margin: 0;
   }
 `;
 
 export const ErrorParagraph = styled.p`
   color: ${(props) => props.theme.colors.redish};
   width: 100%;
-  padding-left: 30px;
+  padding-left: 5%;
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -97,11 +91,10 @@ export const StyledInputField = styled.input`
   }
 
   @media (min-width: 768px) {
-    width: 80%;
+    width: 95%;
     height: 2.78rem;
     border-radius: 5px;
     margin: 0;
-    margin-right: 1rem;
     ::placeholder {
       padding-left: 30px;
       color: ${(props) => props.theme.colors.gray};
