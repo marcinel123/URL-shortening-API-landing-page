@@ -25,10 +25,8 @@ export const FormElement = ({ url, setUrl, shortenLink, error, setError }) => {
           onChange={handleInput}
           className={`${error ? true : ""}`}
         />
-        {error ? (
+        {error && (
           <ErrorParagraph className="error">Please add link</ErrorParagraph>
-        ) : (
-          ""
         )}
       </Wrapper>
       <StyledButton onClick={shortenLink}>Shorten It!</StyledButton>

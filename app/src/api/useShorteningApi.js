@@ -19,12 +19,9 @@ export const useShorteningApi = (url) => {
         ])
       );
     } catch (err) {
-      if (err.response) {
-        console.log(err.response.data);
-        console.log(err.response.status);
-      } else {
-        console.log(`Error: ${err.message}`);
-      }
+      console.log(err.response.data);
+      console.log(err.response.status);
+      console.log(`Error: ${err.message}`);
     }
   };
 
