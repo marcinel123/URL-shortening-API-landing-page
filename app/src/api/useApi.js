@@ -5,7 +5,6 @@ export const useApi = () => {
   const [linksList, setLinksList] = useState([]);
   const [url, setUrl] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem("list")) === null) {
@@ -42,7 +41,6 @@ export const useApi = () => {
       setUrl("");
     } else {
       setIsVisible(true);
-      setIsVisible2(true);
     }
   };
 
@@ -54,7 +52,5 @@ export const useApi = () => {
     setUrl,
     isVisible,
     setIsVisible,
-    isVisible2,
-    setIsVisible2,
   };
 };

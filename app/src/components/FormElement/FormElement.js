@@ -7,19 +7,10 @@ import {
   ErrorParagraph,
 } from "./FormElement.styles";
 
-export const FormElement = ({
-  url,
-  shortenLink,
-  setUrl,
-  isVisible,
-  isVisible2,
-  setIsVisible,
-  setIsVisible2,
-}) => {
+export const FormElement = ({ url, setUrl, shortenLink, error, setError }) => {
   const handleInput = (e) => {
     setUrl(e.target.value);
-    setIsVisible(false);
-    setIsVisible2(false);
+    setError(false);
   };
 
   return (
@@ -32,20 +23,13 @@ export const FormElement = ({
           type="text"
           placeholder="Shorten a link here..."
           onChange={handleInput}
-          className={`${isVisible ? true : ""}`}
+          className={`${error ? true : ""}`}
         />
-        {isVisible ? (
+        {error && (
           <ErrorParagraph className="error">Please add link</ErrorParagraph>
-        ) : (
-          ""
         )}
-        <StyledButton onClick={shortenLink}>Shorten It!</StyledButton>
       </Wrapper>
-      {isVisible2 ? (
-        <ErrorParagraph className="error2">Please add link</ErrorParagraph>
-      ) : (
-        ""
-      )}
+      <StyledButton onClick={shortenLink}>Shorten It!</StyledButton>
     </StyledForm>
   );
 };
