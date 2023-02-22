@@ -27,7 +27,6 @@ export const StyledListElement = styled.div`
     margin: 20px 0;
     width: 89%;
     min-height: 5.5rem;
-    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,12 +49,12 @@ export const StyledLinkandBtnWrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
-    margin-left: 5%;
+    width: 50%;
+    margin-left: 0;
   }
   @media (min-width: 1440px) {
-    width: 50%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 0;
   }
 `;
 
@@ -80,25 +79,24 @@ export const StyledShortLink = styled.p`
 export const StyledLongLink = styled.p`
   margin: 0;
   padding: 10px 0;
-  padding-left: 5%;
   text-align: left;
   border-bottom: 1px solid ${(props) => props.theme.colors.gray};
-  width: 100%;
+  width: 90%;
   font-size: ${(props) => props.theme.fontSizes.small};
   color: ${(props) => props.theme.colors.black};
+  overflow: hidden;
   @media (min-width: 768px) {
-    margin-right: 10%;
     padding: 0;
-    width: 30%;
-    max-width: 12rem;
+    width: 45%;
     border: none;
     font-size: ${(props) => props.theme.fontSizes.medium};
   }
   @media (min-width: 1440px) {
-    width: 28%;
-    max-width: 19rem;
+    width: 60%;
+    max-width: 34rem;
     font-size: ${(props) => props.theme.fontSizes.large};
-    margin-right: 12%;
+    margin-right: 3%;
+    margin-left: 2%;
   }
 `;
 
