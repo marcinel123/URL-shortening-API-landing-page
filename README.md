@@ -16,8 +16,9 @@ To start with this project:
 
 5. Last thing and we are all setup, please write in terminal: npm start
 
-! These simple steps should start the app in you browser.
+These simple steps should start the app in you browser.
 
+<table><tr><td valign="top" width="90%">
 
 Desktop view:
 
@@ -30,3 +31,5 @@ Mobile view:
 Active state when creating short link:
 
 <img width="441" alt="url3" src="https://user-images.githubusercontent.com/95523781/220839764-2b571e9f-3cfd-44f3-b594-a9236ff3f6ab.png">
+ 
+</td></tr></table>  
