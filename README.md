@@ -2,7 +2,7 @@
 
 Desktop view:
 
-<img width="960" alt="url1" src="https://user-images.githubusercontent.com/95523781/220839725-6f54b879-d53e-44a8-b5fa-f1d598dd6945.png">
+<img width="609" alt="url1" src="https://user-images.githubusercontent.com/95523781/220840228-69e8313c-101c-41ce-91cd-ef78a953e9a2.png">
 
 Mobile view:
 
