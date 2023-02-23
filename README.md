@@ -1,5 +1,7 @@
 # URL-shortening-API-landing-page
 
+## About the project
+
 This App will help you to shorten any link you want to just several letters. Enjoy.
 
 
@@ -7,7 +9,7 @@ Hi there!
 
 I am so glad you want to check my app :)
 
-To start with this project: 
+## Setup
 
 1. First what you need to do is to clone this repo.
 
