@@ -1,5 +1,8 @@
 # URL-shortening-API-landing-page
 
+This App will help you to shorten any link you want to just several letters. Enjoy.
+
+
 Hi there!
 
 I am so glad you want to check my app :)
