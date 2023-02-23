@@ -19,7 +19,7 @@ I am so glad you want to check my app :)
  
 4. Next thing to do is to install all dependencies so you need to write: npm install.
 
-5. Last thing and we are all setup, please write in terminal: npm start
+5. Last thing and we are all setup, please write in terminal: `npm start`
 
 These simple steps should start the app in you browser.
 
