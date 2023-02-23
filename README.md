@@ -4,10 +4,13 @@
 
 This App will help you to shorten any link you want to just several letters. Enjoy.
 
+TODO: Add link to live version deployed to Netlify
 
 Hi there!
 
 I am so glad you want to check my app :)
+
+## Tech stack
 
 ## Setup
 
