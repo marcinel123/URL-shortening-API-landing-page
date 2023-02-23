@@ -1,5 +1,24 @@
 # URL-shortening-API-landing-page
 
+Hi there!
+
+I am so glad you want to check my app :)
+
+To start with this project: 
+
+1. First what you need to do is to clone this repo.
+
+2. Go to your terminal and write: git clone https://github.com/marcinel123/URL-shortening-API-landing-page.git
+
+3. After cloning is finished you have to enter the folder with this repo so in you terminal write: cd URL-shortening-API-landing-page 
+ 
+4. Next thing to do is to install all dependencies so you need to write: npm install.
+
+5. Last thing and we are all setup, please write in terminal: npm start
+
+! These simple steps should start the app in you browser.
+
+
 Desktop view:
 
 <img width="609" alt="url1" src="https://user-images.githubusercontent.com/95523781/220840228-69e8313c-101c-41ce-91cd-ef78a953e9a2.png">
