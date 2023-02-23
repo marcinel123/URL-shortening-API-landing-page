@@ -8,15 +8,15 @@ import {
   StyledButton,
   StyledImgWrapper,
   StyledImg,
-} from "./Content.styles";
+} from "./IntroSection.styles";
 
-export const Content = () => {
+export const IntroSection = () => {
   return (
     <StyledSection>
       <StyledDiv>
         <StyledH2>More than just shorter links</StyledH2>
         <StyledP>
-          Build your brand's recognition and get detailed insights on how you
+          Build your brand's recognition and get detailed insights on how your
           links are performing.
         </StyledP>
         <StyledButton>Get Started</StyledButton>

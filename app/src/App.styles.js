@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
+  box-sizing: border-box;
   position: relative;
-  margin: 0;
-  padding: 0;
-  width: 80rem;
+  margin: 0 auto;
+  width: 100%;
 `;
