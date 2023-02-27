@@ -4,7 +4,7 @@
 
 This App will help you to shorten any link you want to just several letters. Enjoy.
 
-TODO: Add link to live version deployed to Netlify
+Live version: https://url-shorten-by-ela.netlify.app
 
 Hi there!
 
