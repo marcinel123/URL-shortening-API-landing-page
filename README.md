@@ -16,11 +16,11 @@ I am so glad you want to check my app :)
 
 1. First what you need to do is to clone this repo.
 
-2. Go to your terminal and write: git clone https://github.com/marcinel123/URL-shortening-API-landing-page.git
+2. Go to your terminal and write: `git clone https://github.com/marcinel123/URL-shortening-API-landing-page.git`
 
 3. After cloning is finished you have to enter the folder with this repo so in you terminal write: cd URL-shortening-API-landing-page 
  
-4. Next thing to do is to install all dependencies so you need to write: npm install.
+4. Next thing to do is to install all dependencies so you need to write: `npm install`.
 
 5. Last thing and we are all setup, please write in terminal: `npm start`
 
